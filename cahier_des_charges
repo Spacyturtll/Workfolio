@@ -1,0 +1,43 @@
+**Cahier des Charges : Formulaire de Contact avec PHPMailer**
+
+### 1. Présentation du Projet
+L'objectif est de mettre en place un formulaire de contact permettant aux utilisateurs d'envoyer un message via un serveur SMTP en utilisant la bibliothèque PHPMailer.
+
+### 2. Fonctionnalités Requises
+- Affichage d'un formulaire HTML permettant la saisie des champs suivants :
+  - Nom
+  - Email
+  - Email du destinataire
+  - Sujet
+  - Message
+- Envoi des données via une requête POST
+- Traitement des données côté serveur avec PHP
+- Envoi des emails via le protocole SMTP
+- Gestion des erreurs et affichage des messages de succès/échec
+
+### 3. Technologies Utilisées
+- **Backend** : PHP (avec la bibliothèque PHPMailer)
+- **Frontend** : HTML, CSS (éventuellement TailwindCSS)
+- **Serveur SMTP** : Gmail SMTP ou autre fournisseur
+
+### 4. Contraintes Techniques
+- Le fichier doit utiliser **PHPMailer** pour gérer l'envoi des emails
+- Les identifiants SMTP doivent être sécurisés et non stockés en dur dans le code
+- Vérification et validation des entrées utilisateur pour éviter les attaques XSS et injections SQL
+- Configuration correcte du serveur SMTP pour éviter que les emails ne soient considérés comme du spam
+
+### 5. Sécurité
+- Utilisation de variables d'environnement pour stocker les informations sensibles (identifiants SMTP, emails...)
+- Validation et filtrage des entrées utilisateur
+- Gestion des erreurs pour éviter les divulgations d'informations sur le serveur
+
+### 6. Déploiement et Hébergement
+- Hébergement sur un serveur supportant PHP
+- Installation de PHPMailer via Composer (`composer require phpmailer/phpmailer`)
+- Configuration correcte du serveur SMTP pour permettre l'envoi des emails
+
+### 7. Améliorations Futures
+- Ajout d'un système de CAPTCHA pour éviter les spams
+- Intégration avec une base de données pour stocker les messages reçus
+- Envoi de notifications à l'administrateur en cas de nouveaux messages
+- Mise en place d'un système de logs pour suivre les erreurs et envois d'emails
