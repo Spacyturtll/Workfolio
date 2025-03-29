@@ -3,6 +3,10 @@
 ## 1. Introduction
 Ce document constitue le cahier des charges pour le développement du portfolio en ligne de Mathias Joquet, étudiant en informatique et développeur. Le site a pour objectif de présenter ses compétences, projets et parcours professionnel de manière moderne et interactive.
 
+# 1.1 Hébergement 
+- Site héberger sur hostinger
+- Nom de domaine : https://theworfolio.shop
+
 ## 2. Objectifs du Projet
 - Présenter le profil professionnel de Mathias Joquet
 - Mettre en valeur ses compétences techniques et ses projets
